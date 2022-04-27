@@ -5,7 +5,7 @@ $email= $_POST['email'];
 $subject =$_POST ['subject'];
 $message= $_POST['message'];
 
-$email_from = 'info@sarabjeet';
+$email_from = 'info@sarabjeet111098.github.io';
 $email_subject='new form submission';
 $email_body="User Name: $name.\n".
             "User Email : $email.\n".
