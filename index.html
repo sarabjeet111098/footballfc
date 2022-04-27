@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Young Brothers Mhow</title>
+        <!---------------Connection with CSS------------------->
+        <link rel ="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,500;1,600&display=swap" rel="stylesheet">
+   
+<link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+    <body>
+        
+<section class="header">
+<nav>
+
+    <a href="index.html"><img src="images/logo.png" ></a>
+    <div class ="nav-links" id="navLinks">
+        
+
+        <i class="fa fa-times" onclick="hideMenu()"> </i>
+<ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT US</a></li>
+    <li><a href="Tournaments.html">TOURNAMENTS</a></li>
+    <li><a href="Sponsers.html">SPONSORS</a></li>
+    <li><a href="Contact.html">CONTACT US</a></li>
+    <li><a href="SummerCamp.html">SUMMER CAMP2022 <a></li>        
+   
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"> </i>
+
+</nav>
+<div class="text-box">
+    <h1>Young Brothers F.C. </h1>
+    <p>We are one of the oldest clubs with rich history of football. <br> Our goal is to shape young talents by giving them adequate training, logistics and<br> support to show their true potential.</p>
+
+<a href="Contact.html" class="hero-btn">Visit Us To Know More</a>
+
+</div>
+
+
+</section>
+<section class="main">
+    <div id="main1">
+        <img src="images/f1.JPG" id="slideimage">
+    </div>
+</section>
+
+<!------------Tournaments------------->
+<section class="tournamets">
+
+    <h1> Tournaments and Other Events </h1>
+<p>We organise tournaments on both state and national level</p>
+
+<div class="row">
+<div class="tournamets-col">
+<h2>Brigadier G.S. kale Tournament</h2>
+<p>Brigadier G.S. KALE memorial football tournament 
+    is state level tournament in which teams of Mhow,
+    Ratlam, Neemuch ,Ujjain participate.
+</p>
+    <a href="https://bloggerdevkumar.blogspot.com/2007/12/brigadier-kale-football-tournament-2007.html">News</a>
+
+</div>
+<div class="tournamets-col">
+<h2>Shri Puneet Agarwal tournament</h2>
+<p> Shri Punnet Agarwal National FootBall Tournament
+    is organised every in his remembrance and his love 
+    for sport.
+</p>
+</div>
+<div class="tournamets-col">
+<h2>Sports Meet</h2>
+<p> Young brothers club organized the 59th sports meet on the occasion of Vijay Dashmi.
+     More than 500 boys and girls took part in the competitions and secured first, second 
+     and third slots.</p>
+     <a href="https://www.freepressjournal.in/bhopal/young-brothers-club-organizes-sports-meet">News</a>
+
+</div>
+</div>
+</section>
+
+<!---------------footer------contact------------------->
+<section class="cta">
+    <h1>Join Us and become a part of a revolution</h1>
+    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJlKFrkMxFWsgkBfJXTwKFBPLXgfqpNVKlMzCjjdvsxLJXCtcwlNnnfQtmstXPftmMDZRhg" class="hero-btn">CONTACT US</a>
+
+</section>
+<!------------------JavaScript------------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+    function first(){
+        document.getElementById("slideimage").src="images/f2.jpg";
+        }
+        
+        function second(){
+        document.getElementById("slideimage").src="images/f3.jpg";
+        }
+        function third(){
+        document.getElementById("slideimage").src="images/f1.jpg";
+        }
+        
+        setInterval(first,3000);
+        setInterval(second,6000);
+        setInterval(third,9000);
+</script>
+    </body>
+</html>
